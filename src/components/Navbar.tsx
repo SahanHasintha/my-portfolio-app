@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
               to="/" 
               className="text-xl font-bold text-gray-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300"
             >
-              Portfolio
+              Sahan | Full Stack Developer
             </Link>
           </div>
 
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                     className="text-xl font-bold text-gray-800 dark:text-white"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Portfolio
+                    Menu
                   </Link>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
