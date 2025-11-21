@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           {/* Introduction */}
           <div className="max-w-3xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Welcome to my portfolio! Hi, <br /> I'm Sahan Pathirannahalage, a Full Stack Developer with over 3 years of experience building modern and scalable web applications. I specialize in React.js and Node.js, working extensively with TypeScript to create clean, efficient, and maintainable code. My focus is on delivering high-quality, user-friendly solutions that combine strong frontend design with robust backend architecture. I’m passionate about continuous learning, exploring new technologies, and contributing to meaningful projects that make a real impact.
+              Welcome to my portfolio! <br />Hi, I'm Sahan Pathirannahalage, a Full Stack Developer with over 3 years of experience building modern and scalable web applications. I specialize in React.js and Node.js, working extensively with TypeScript to create clean, efficient, and maintainable code. My focus is on delivering high-quality, user-friendly solutions that combine strong frontend design with robust backend architecture. I’m passionate about continuous learning, exploring new technologies, and contributing to meaningful projects that make a real impact.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
