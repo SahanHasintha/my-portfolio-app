@@ -44,6 +44,21 @@ const About: React.FC = () => {
     },
   ];
 
+  const certificates = [
+    {
+      title: 'AWS Cloud Technical Essentials',
+      provider: 'Amazon Web Services · Coursera',
+      issued: 'November 9, 2025',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/H6G1N5Y5B6SY',
+    },
+    {
+      title: 'Migrating to the AWS Cloud',
+      provider: 'Amazon Web Services · Coursera',
+      issued: 'November 21, 2025',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/68C6YJ84O7Z1',
+    },
+  ];
+
   return (
     <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-300 relative">
       <Particle3DBackground />
@@ -150,7 +165,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Personal Interests */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
             Beyond Code
           </h2>
@@ -185,6 +200,71 @@ const About: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Photography</h3>
               <p className="text-gray-600 dark:text-gray-300">Capturing moments and finding beauty in everyday life through the lens of a camera.</p>
             </div>
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+            Certifications
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {certificates.map((certificate, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden border border-primary-200 dark:border-primary-800 rounded-2xl p-6 flex flex-col justify-between bg-gradient-to-br from-white via-primary-50/70 to-white dark:from-gray-900 dark:via-primary-900/40 dark:to-gray-900 shadow-xl shadow-primary-100/70 dark:shadow-primary-900/20 transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary-200/70"
+              >
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-primary-500/10 via-primary-400/5 to-transparent pointer-events-none" />
+
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-primary-100 dark:bg-primary-900 flex items-center justify-center mb-5 mx-auto md:mx-0 ring-4 ring-primary-200/80 dark:ring-primary-900/50">
+                    <svg
+                      className="w-7 h-7 text-primary-600 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-primary-600 dark:text-primary-400 text-sm font-semibold mb-2">
+                    {certificate.provider}
+                  </p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {certificate.title}
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm">
+                    Issued {certificate.issued}
+                  </p>
+                </div>
+                <a
+                  href={certificate.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary-600 bg-primary-600 text-white rounded-2xl text-sm font-semibold tracking-wide shadow-lg shadow-primary-300/40 hover:shadow-primary-400/60 hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  View Credential
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M5 12h14m0 0l-4-4m4 4l-4 4"
+                    />
+                  </svg>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
