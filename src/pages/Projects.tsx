@@ -145,7 +145,6 @@ const Projects: React.FC = () => {
     },
   ];
 
-  const featuredPersonalProjects = personalProjects.filter(project => project.featured);
   const otherPersonalProjects = personalProjects.filter(project => !project.featured);
 
   return (
