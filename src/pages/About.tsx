@@ -19,28 +19,22 @@ const About: React.FC = () => {
 
   const experiences = [
     {
-      title: 'Lead Engineer',
+      title: 'Lead Developer | Full Stack Developer',
       company: 'Efito Solutions (Pvt) Ltd',
-      period: '2023 - Present',
-      description: 'Leading the development of a CRM application for BuilderBid, a U.S. company. Guiding the team to deliver high-quality, efficient solutions that successfully meet customer requirements.',
-    },
-    {
-      title: 'Software Engineer',
-      company: 'Efito Solutions (Pvt) Ltd',
-      period: '2022 - 2023',
-      description: 'Worked on multiple U.S.-based projects, including a software system called Lavni USA. Developed web applications using React, Node.js, and TypeScript.',
+      period: 'Aug 2023 - Sep 2025',
+      description: 'Led the development of multiple USA-based projects, providing technical direction, mentoring engineers, and conducting code reviews to ensure high-quality, scalable deliverables. Built and integrated cloud-native and serverless solutions using React, Node.js, TypeScript, and AWS, including S3-based document handling with event-driven processing and automated workflows. Developed AI-powered CRM features and real-time communication capabilities by integrating services such as VAPI, N8N, Twilio, Vonage, and Zoom, along with automated scheduling, notifications, and transcription. Focused on delivering performant, secure, and user-centric applications with modern tooling and responsive UI design.',
     },
     {
       title: 'Associate Software Engineer',
       company: 'Kingslake (Pvt) Ltd',
-      period: '2021 - 2022',
-      description: 'Contributed to several web applications built with React and Node.js using TypeScript. Gained experience in full-stack development and modern web technologies.',
+      period: 'Sep 2022 - Aug 2023',
+      description: 'Contributed to the development of a Transport Management System by enhancing frontend and backend functionality using React.js and Node.js. Improved application performance through frontend load optimization, backend endpoint tuning, database connection pooling, and Node.js clustering to leverage multi-core processing. Strengthened system reliability with robust exception handling and ensured API quality through comprehensive documentation and testing using Swagger.',
     },
     {
       title: 'Software Engineering Intern',
       company: 'Panaceata (Pvt) Ltd',
-      period: '2020 - 2021',
-      description: 'Gained hands-on experience in web application development using Angular, React, and Node.js. Worked on real-world projects during university studies.',
+      period: 'Aug 2020 - Feb 2021',
+      description: 'Collaborated closely with supervisors and team members to implement frontend features using Angular and backend functionality with Node.js. Worked with Sequelize ORM and both SQL and MongoDB databases to manage and query data efficiently. Contributed to bug fixes, feature testing, and best practices, supporting the successful on-time delivery of multiple projects while gaining strong experience in a professional team based development environment.',
     },
   ];
 
@@ -56,6 +50,12 @@ const About: React.FC = () => {
       provider: 'Amazon Web Services · Coursera',
       issued: 'November 21, 2025',
       credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/68C6YJ84O7Z1',
+    },
+    {
+      title: 'Architecting Solutions on AWS',
+      provider: 'Amazon Web Services · Coursera',
+      issued: 'December 7, 2025',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/2D2KFVJ972LF',
     },
   ];
 
@@ -164,45 +164,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Personal Interests */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-16">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
-            Beyond Code
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Reading</h3>
-              <p className="text-gray-600 dark:text-gray-300">I love reading tech blogs, design books, and staying updated with the latest industry trends.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Travel</h3>
-              <p className="text-gray-600 dark:text-gray-300">Exploring new places and cultures helps me gain fresh perspectives and inspiration.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Photography</h3>
-              <p className="text-gray-600 dark:text-gray-300">Capturing moments and finding beauty in everyday life through the lens of a camera.</p>
-            </div>
-          </div>
-        </div>
-
         {/* Certifications */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
@@ -265,6 +226,45 @@ const About: React.FC = () => {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Personal Interests */}
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mt-16">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+            Beyond Code
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Reading</h3>
+              <p className="text-gray-600 dark:text-gray-300">I love reading tech blogs, design books, and staying updated with the latest industry trends.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Travel</h3>
+              <p className="text-gray-600 dark:text-gray-300">Exploring new places and cultures helps me gain fresh perspectives and inspiration.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Photography</h3>
+              <p className="text-gray-600 dark:text-gray-300">Capturing moments and finding beauty in everyday life through the lens of a camera.</p>
+            </div>
           </div>
         </div>
       </div>
