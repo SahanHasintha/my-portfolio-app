@@ -83,16 +83,7 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                My name is Sahan. I completed my Advanced Level examination in the Mathematics stream, 
-                achieving two As and one C. After that, I pursued a Diploma in Software Engineering 
-                at Esoft Metro Campus, which helped me build a solid foundation in programming and 
-                system design.
-              </p>
-              <p>
-                I was then selected for the Bachelor's Degree program in Software Engineering at the 
-                University of Kelaniya. During my studies, I completed an internship at Panaceata (Pvt) Ltd, 
-                where I gained hands-on experience in web application development using Angular, React, 
-                and Node.js.
+              My name is Sahan. I completed my Advanced Level examination in the Mathematics stream, achieving two As and one C. Following this, I was selected for the Bachelor of Science (Honours) Degree in Software Engineering at the University of Kelaniya, where I developed a strong foundation in software development, system design, and problem-solving. During my studies, I completed an internship at Panaceata (Pvt) Ltd, gaining hands-on experience in web application development using Angular, React, and Node.js, which strengthened my practical skills and understanding of real-world software engineering practices.
               </p>
               <p>
                 After graduating, I joined Kingslake (Pvt) Ltd as an Associate Software Engineer, 

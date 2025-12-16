@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
       position: 'Software Engineering Intern',
       description: 'Contributed as a member of the development team to the KLP Day Care Management System, a U.S.-based application designed to streamline and automate day care center operations. The system supports key functionalities such as child enrollment, attendance tracking, and billing management, enabling efficient day-to-day administration. Developed an intuitive and responsive user interface using Angular to ensure a smooth user experience, while leveraging Node.js on the backend to handle business logic, data processing, and system workflows. This project strengthened my full-stack development skills and my ability to build scalable solutions tailored to the operational needs of the childcare industry.',
       image: '',
-      technologies: ['Angular', 'Node.js', 'Full-Stack Development', 'Child Care Management', 'Billing System'],
+      technologies: ['Angular', 'Node.js', 'Sequelize', 'MySQL', 'Full-Stack Development', 'Child Care Management'],
       github: '',
       live: '',
       featured: true,
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
       position: 'Software Engineering Intern',
       description: 'I contributed to the Tenega Parking System, a local Sri Lankan project designed to improve parking management in the Colombo area. The system enhanced user convenience by providing real-time parking availability, booking, and payment processing. I worked as a full-stack developer, using Angular to build a responsive and user-friendly front end, and Node.js on the back end to handle server-side logic, data management, and system integrations. This project strengthened my experience in developing scalable and efficient solutions tailored to urban infrastructure needs.',
       image: '',
-      technologies: ['Angular', 'Node.js', 'Real-time Systems', 'Payment Processing', 'Urban Infrastructure'],
+        technologies: ['Angular', 'Node.js', 'Sequelize', 'MySQL', 'Real-time Systems', 'Payment Processing', 'Urban Infrastructure'],
       github: '',
       live: '',
       featured: true,
@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
       description: 'I am currently working on client projects based in Australia, including a frontend-only website for BA Architects, an architectural firm in Queensland. The application is being developed using React with TypeScript, focusing on a clean, modern, and responsive user interface that aligns with the company\'s brand identity. The project is in an active phase, with requirements and design details still being discussed and refined in close collaboration with the client. To share a live demo during the ongoing requirement discussions, the site is currently hosted using Amazon S3 static website hosting and delivered via CloudFront for fast and reliable access. The project remains in an active development phase with continuous client collaboration.',
       image: '',
       technologies: ['React', 'TypeScript', 'AWS S3', 'CloudFront', 'Responsive Design'],
-      github: '',
+      github: 'https://github.com/SahanHasintha/architect-web',
       live: 'https://d1geyf6hxyp0hv.cloudfront.net/',
       featured: true,
     },
@@ -103,8 +103,9 @@ const Projects: React.FC = () => {
       position: 'Full Stack Developer',
       description: 'I am currently working on a client project for a mini supermarket, where I am developing both the frontend and backend of the application. The frontend is built using React with TypeScript, while the backend is developed with NestJS and TypeScript, using PostgreSQL as the database. At this stage, a few frontend pages are hosted on an AWS EC2 instance to demonstrate progress. I have set up GitHub Actions for CI/CD to automate builds and deployments, and I use Docker for local development to run PostgreSQL without requiring a local installation, ensuring a consistent and efficient development environment.',
       image: '',
-      technologies: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'AWS EC2', 'GitHub Actions', 'Docker', 'CI/CD'],
-      github: '',
+      technologies: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Prisma', 'AWS EC2', 'GitHub Actions', 'Docker', 'CI/CD'],
+      github: 'https://github.com/SahanHasintha/supermarket-web',
+      githubBackend: 'https://github.com/SahanHasintha/supermarket-server',
       live: 'http://15.134.39.65/',
       featured: true,
     },
@@ -302,86 +303,43 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
                 
-                {/* Action Button */}
-                {project.live && (
-                  <div className="flex gap-3">
+                {/* Action Buttons */}
+                <div className="space-y-3">
+                  {project.live && (
                     <a
                       href={project.live}
-                      className="w-full bg-green-600 text-white px-4 py-2 rounded-lg text-center font-medium hover:bg-green-700 transition-colors duration-300"
+                      className="w-full bg-green-600 text-white px-4 py-2 rounded-lg text-center font-medium hover:bg-green-700 transition-colors duration-300 block"
                     >
                       Live Demo
                     </a>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Personal Projects - Featured */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
-            Featured Personal Projects
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {featuredPersonalProjects.map((project) => (
-              <div key={project.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                {/* Project Image */}
-                <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const fallback = target.nextElementSibling as HTMLElement;
-                      if (fallback) fallback.style.display = 'flex';
-                    }}
-                  />
-                  <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center" style={{ display: 'none' }}>
-                    <svg className="w-16 h-16 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    {project.description}
-                  </p>
-                  
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, index) => (
-                      <span 
-                        key={index}
-                        className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 text-sm rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <a
-                      href={project.live}
-                      className="w-full bg-primary-600 text-white px-4 py-2 rounded-lg text-center font-medium hover:bg-primary-700 transition-colors duration-300"
-                    >
-                      Live Demo
-                    </a>
-                  </div>
+                  )}
+                  {(project.github || project.githubBackend) && (
+                    <div className="flex gap-3">
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          className="flex-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-lg text-center font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300"
+                        >
+                          View FE Code
+                        </a>
+                      )}
+                      {project.githubBackend && (
+                        <a
+                          href={project.githubBackend}
+                          className="flex-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-lg text-center font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors duration-300"
+                        >
+                          View BE Code
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Other Personal Projects */}
+        {/* Personal Projects */}
         <div>
           <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
             Other Personal Projects
