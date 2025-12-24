@@ -40,10 +40,10 @@ const About: React.FC = () => {
 
   const certificates = [
     {
-      title: 'AWS Cloud Technical Essentials',
+      title: 'Architecting Solutions on AWS',
       provider: 'Amazon Web Services · Coursera',
-      issued: 'November 9, 2025',
-      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/H6G1N5Y5B6SY',
+      issued: 'December 7, 2025',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/2D2KFVJ972LF',
     },
     {
       title: 'Migrating to the AWS Cloud',
@@ -52,10 +52,10 @@ const About: React.FC = () => {
       credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/68C6YJ84O7Z1',
     },
     {
-      title: 'Architecting Solutions on AWS',
+      title: 'AWS Cloud Technical Essentials',
       provider: 'Amazon Web Services · Coursera',
-      issued: 'December 7, 2025',
-      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/2D2KFVJ972LF',
+      issued: 'November 9, 2025',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/H6G1N5Y5B6SY',
     },
   ];
 
