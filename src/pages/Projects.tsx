@@ -104,7 +104,7 @@ const Projects: React.FC = () => {
       description: 'I am currently working on a client project for a mini supermarket, where I am developing both the frontend and backend of the application. The frontend is built using React with TypeScript, while the backend is developed with NestJS and TypeScript, using PostgreSQL as the database. At this stage, a few frontend pages are hosted on an AWS EC2 instance to demonstrate progress. I have set up GitHub Actions for CI/CD to automate builds and deployments, and I use Docker for local development to run PostgreSQL without requiring a local installation, ensuring a consistent and efficient development environment.',
       image: '',
       technologies: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Prisma', 'AWS EC2', 'GitHub Actions', 'Docker', 'CI/CD'],
-      github: 'https://github.com/SahanHasintha/supermarket-web',
+      github: 'https://github.com/SahanHasintha/supermarket-web-ongoing',
       githubBackend: 'https://github.com/SahanHasintha/supermarket-server',
       live: 'http://15.134.39.65/',
       featured: true,
