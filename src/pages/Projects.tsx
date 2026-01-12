@@ -106,7 +106,8 @@ const Projects: React.FC = () => {
       technologies: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Prisma', 'AWS EC2', 'GitHub Actions', 'Docker', 'CI/CD'],
       github: 'https://github.com/SahanHasintha/supermarket-web-ongoing',
       githubBackend: 'https://github.com/SahanHasintha/supermarket-server',
-      live: 'http://15.134.39.65/',
+      live: '',
+      // live: 'http://15.134.39.65/',
       featured: true,
     },
   ];
