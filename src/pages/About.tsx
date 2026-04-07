@@ -19,7 +19,7 @@ const About: React.FC = () => {
 
   const experiences = [
     {
-      title: 'Lead Developer | Full Stack Developer',
+      title: 'Senior Lead Developer | Senior Full Stack Developer',
       company: 'Efito Solutions (Pvt) Ltd',
       period: 'Aug 2023 - Sep 2025',
       description: 'Led the development of multiple USA-based projects, providing technical direction, mentoring engineers, and conducting code reviews to ensure high-quality, scalable deliverables. Built and integrated cloud-native and serverless solutions using React, Node.js, TypeScript, and AWS, including S3-based document handling with event-driven processing and automated workflows. Developed AI-powered CRM features and real-time communication capabilities by integrating services such as VAPI, N8N, Twilio, Vonage, and Zoom, along with automated scheduling, notifications, and transcription. Focused on delivering performant, secure, and user-centric applications with modern tooling and responsive UI design.',

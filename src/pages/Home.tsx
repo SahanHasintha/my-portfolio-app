@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           {/* Introduction */}
           <div className="max-w-3xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Welcome to my portfolio! <br />Hi, I'm Sahan Pathirannahalage, a Full Stack Developer with over 3 years of experience building modern and scalable web applications. I specialize in React.js and Node.js, working extensively with TypeScript to create clean, efficient, and maintainable code. My focus is on delivering high-quality, user-friendly solutions that combine strong frontend design with robust backend architecture. I’m passionate about continuous learning, exploring new technologies, and contributing to meaningful projects that make a real impact.
+            Welcome to my portfolio! <br />Hi, I’m Sahan Hasintha, a Senior Lead Software Engineer with nearly 4 years of experience building scalable and high performance web applications using React.js, Next.js, Node.js, Nest.js and TypeScript. I focus on creating clean, efficient systems with strong frontend design and robust backend architecture. I have led teams and delivered multiple international projects across domains such as healthcare and insurance, ensuring high quality code through leadership and code reviews. I am also passionate about AI driven development, with hands on experience building intelligent systems using technologies like LangChain, LangGraph, and Gemini.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -66,6 +66,17 @@ const Home: React.FC = () => {
               What I Do
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <svg className="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 3a3 3 0 00-3 3v2.25M14.25 3a3 3 0 013 3v2.25M4.5 10.5h15M6.75 10.5v7.5a3 3 0 003 3h4.5a3 3 0 003-3v-7.5M9 14h.01M15 14h.01" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">AI Development</h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Building intelligent applications using LLMs, LangChain, LangGraph, and vector databases for semantic search, automation, and AI driven insights.
+                </p>
+              </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <svg className="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,16 +105,6 @@ const Home: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">UI/UX Design</h3>
                 <p className="text-gray-600 dark:text-gray-300">Designing intuitive and beautiful user experiences that are both functional and aesthetically pleasing.</p>
-              </div>
-              
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  <svg className="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance Optimization</h3>
-                <p className="text-gray-600 dark:text-gray-300">Optimizing applications for speed, efficiency, and the best possible user experience.</p>
               </div>
             </div>
           </div>

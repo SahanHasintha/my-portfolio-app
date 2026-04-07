@@ -5,6 +5,30 @@ const Projects: React.FC = () => {
   const efitoProjects = [
     {
       id: 1,
+      title: 'CRM for BuilderBid',
+      company: 'Efito Solutions (Pvt) Ltd',
+      position: 'Team Lead & Senior Software Engineer',
+      description: 'Developed a web based platform using React and Node.js with TypeScript that enables USA based construction companies to create and manage their own AI-powered virtual assistants for web chat, web calls, and phone calls. The system integrates VAPI AI to power conversational assistants and allows companies to upload custom knowledge bases to personalize responses. Implemented Twilio integration to display and manage available phone numbers, enabling companies to purchase and assign phone numbers to specific AI assistants. Built features for configuring custom greeting and farewell messages, selecting assistant voices using ElevenLabs, and managing assistant settings. Additionally, developed session tracking views to monitor and review interactions that occurred with each AI assistant, providing visibility into usage and engagement.Used MongoDB as the primary database with Mongoose as the ODM to model and manage data related to companies, assistants, phone numbers, and session history.',
+      image: '',
+      technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB', 'Mongoose', 'VAPI AI', 'Twilio', 'ElevenLabs', 'AI Assistants'],
+      github: '',
+      live: '',
+      featured: true,
+    },
+    {
+      id: 2,
+      title: 'Insurance Tracking for BuilderBid',
+      company: 'Efito Solutions (Pvt) Ltd',
+      position: 'Team Lead & Senior Software Engineer',
+      description: 'I led a USA based construction industry project focused on automating subcontractor insurance verification. The application allowed construction companies (around 250) to add subcontractors and upload their insurance documents, which were stored in an S3 bucket using presigned URLs. The system scanned uploaded insurance PDFs to extract expiry dates and insurance amounts, and automatically sent reminder emails to subcontractors when policies were nearing expiration. Initially, we experimented with multiple AI models (including Mistral OCR and GPT models) for data extraction, but due to occasional inaccuracies, we ultimately used n8n\'s built-in PDF data extraction tools, which provided more reliable results and streamlined email automation through n8n workflows.Used MongoDB as the primary database with Mongoose as the ODM to model and manage data related..',
+      image: '',
+      technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB', 'Mongoose', 'AWS S3', 'AWS Lambda', 'Deepgram', 'n8n', 'PDF Processing', 'AI/OCR', 'Email Automation'],
+      github: '',
+      live: '',
+      featured: true,
+    },
+    {
+      id: 3,
       title: 'Lavni',
       company: 'Efito Solutions (Pvt) Ltd',
       position: 'Team Lead & Software Engineer',
@@ -15,30 +39,7 @@ const Projects: React.FC = () => {
       live: '',
       featured: true,
     },
-    {
-      id: 2,
-      title: 'Insurance Tracking for BuilderBid',
-      company: 'Efito Solutions (Pvt) Ltd',
-      position: 'Team Lead & Software Engineer',
-      description: 'I led a USA based construction industry project focused on automating subcontractor insurance verification. The application allowed construction companies (around 250) to add subcontractors and upload their insurance documents, which were stored in an S3 bucket using presigned URLs. The system scanned uploaded insurance PDFs to extract expiry dates and insurance amounts, and automatically sent reminder emails to subcontractors when policies were nearing expiration. Initially, we experimented with multiple AI models (including Mistral OCR and GPT models) for data extraction, but due to occasional inaccuracies, we ultimately used n8n\'s built-in PDF data extraction tools, which provided more reliable results and streamlined email automation through n8n workflows.Used MongoDB as the primary database with Mongoose as the ODM to model and manage data related..',
-      image: '',
-      technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB', 'Mongoose', 'AWS S3', 'AWS Lambda', 'Deepgram', 'n8n', 'PDF Processing', 'AI/OCR', 'Email Automation'],
-      github: '',
-      live: '',
-      featured: true,
-    },
-    {
-      id: 3,
-      title: 'CRM for BuilderBid',
-      company: 'Efito Solutions (Pvt) Ltd',
-      position: 'Team Lead & Software Engineer',
-      description: 'Developed a web based platform using React and Node.js with TypeScript that enables USA based construction companies to create and manage their own AI-powered virtual assistants for web chat, web calls, and phone calls. The system integrates VAPI AI to power conversational assistants and allows companies to upload custom knowledge bases to personalize responses. Implemented Twilio integration to display and manage available phone numbers, enabling companies to purchase and assign phone numbers to specific AI assistants. Built features for configuring custom greeting and farewell messages, selecting assistant voices using ElevenLabs, and managing assistant settings. Additionally, developed session tracking views to monitor and review interactions that occurred with each AI assistant, providing visibility into usage and engagement.Used MongoDB as the primary database with Mongoose as the ODM to model and manage data related to companies, assistants, phone numbers, and session history.',
-      image: '',
-      technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB', 'Mongoose', 'VAPI AI', 'Twilio', 'ElevenLabs', 'AI Assistants'],
-      github: '',
-      live: '',
-      featured: true,
-    },
+    
   ];
 
   const kingslakeProjects = [
